@@ -3,16 +3,16 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #f0f8ff;
+    background-color: #ffe4e1; /* Light pink background */
 }
 
 .container {
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
-    background: #ffffff;
+    background: #fff0f5; /* Light pinkish white container */
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Slightly darker shadow */
 }
 
 input {
@@ -25,7 +25,7 @@ input {
 
 button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #ff69b4; /* Hot pink button */
     color: white;
     border: none;
     border-radius: 5px;
@@ -33,7 +33,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #ff1493; /* Deep pink on hover */
 }
 
 .weather-info {

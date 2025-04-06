@@ -1,7 +1,13 @@
+//event listener
+document.getElementById('cityInput').addEventListener('keydown', (event)=>{
+    if(event.key === 'Enter'){
+        getWeather();
+    }
+})
 async function getWeather() {
     const city = document.getElementById('cityInput').value;
     const weatherInfo = document.getElementById('weatherInfo');
-    const apiKey = '6614716def7e71d5821946f1cae6337c'; // Replace with your OpenWeatherMap API key
+    const apiKey = '6614716def7e71d5821946f1cae6337c';
 
     if (city) {
         weatherInfo.innerHTML = `<p>Fetching weather for <strong>${city}</strong>...</p>`;

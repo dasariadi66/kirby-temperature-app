@@ -1,9 +1,3 @@
-//event listener
-document.getElementById('cityInput').addEventListener('keydown', (event)=>{
-    if(event.key === 'Enter'){
-        getWeather();
-    }
-})
 async function getWeather() {
     const city = document.getElementById('cityInput').value;
     const weatherInfo = document.getElementById('weatherInfo');
@@ -32,3 +26,18 @@ async function getWeather() {
         weatherInfo.innerHTML = '<p>Please enter a city name.</p>';
     }
 }
+
+//event listeners
+document.getElementById('cityInput').addEventListener('keydown', (event)=>{
+    if(event.key === 'Enter'){
+        getWeather();
+    }
+})
+
+document.getElementById('cityInput').addEventListener('input', ()=>{
+    const city = document.getElementById('cityInput').value;
+    const weatherInfo = document.getElementById('weatherInfo');
+    if(!city){
+        weatherInfo.innerHTML = '';
+    }
+})

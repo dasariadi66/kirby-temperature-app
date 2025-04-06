@@ -1,5 +1,10 @@
 {
   "devDependencies": {
-    "cypress": "^14.2.1"
+    "cypress": "^14.2.1",
+    "http-server": "^14.1.1"
+  },
+  "scripts": {
+    "start": "http-server -p 3000",
+    "cypress:open": "cypress open"
   }
 }
